@@ -57,14 +57,6 @@ async def on_member_leave(member):
     name="text",
     description="Convert your text to a minecraft chat log!"
 )
-async def text(ctx, text, rainbow:discord.Option(str, "LGBTQ Text?!?!", choices = ["GayText", "HetroText"])):
-    await ctx.defer()
-    url = f"https://skyblock.noms.tech/render/bridge/{urllib.request.quote(text)}.gif"
-    if rainbow == "GayText":
-        url += "?rainbow"
-    
-    await ctx.respond(url)
-    
     
 @bot.event
 async def on_voice_state_update(member, before, after):
