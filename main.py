@@ -13,7 +13,7 @@ class Bot(commands.Bot):
         super().__init__(*args, **kwargs)
 
         self.command_prefix = "!"
-        self.token = "MTE2MjQwNTUzMjI5NzA4MDk5Mg.G0moVd.Y8ohKeHCd6pIFfYXoPs5DtDNVV5hAPtQP28NYA"
+        self.token = insert token here
 
     def run(self):
         super().run(self.token)
